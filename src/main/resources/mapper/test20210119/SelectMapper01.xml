@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo.mapper.test20210119.SelectMapper01">
+
+    <resultMap id="BaseResultMap" type="com.example.demo.entities.test20210119.TestUser01">
+        <id column="id" property="id" jdbcType="VARCHAR"></id>
+        <id column="serial" property="serial" jdbcType="VARCHAR"></id>
+    </resultMap>
+
+
+    <select id="Select01"  parameterType="String" resultMap="BaseResultMap">
+        select * from USER_TEST_01 where id=#{id}
+    </select>
+
+
+</mapper>
+

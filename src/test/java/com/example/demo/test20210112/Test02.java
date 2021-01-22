@@ -12,7 +12,7 @@ import java.io.IOException;
 public class Test02 {
 
     /**
-     * 字节读取
+     * 字节输入流
      */
     @Test
     public void inputStream(){

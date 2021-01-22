@@ -20,12 +20,12 @@ import java.util.List;
 public class LocalDateUtils {
 
     /**
-     * 显示年月日时分秒，例如 2015-08-11 09:51:53.
+     * 显示年月日时分秒，例如 2021-01-11 09:51:53.
      */
     public static final String DATETIME_PATTERN = "yyyy-MM-dd HH:mm:ss";
 
     /**
-     * 仅显示年月日，例如 2015-08-11.
+     * 仅显示年月日，例如 2021-01-11.
      */
     public static final String DATE_PATTERN = "yyyy-MM-dd";
 
@@ -35,12 +35,12 @@ public class LocalDateUtils {
     public static final String TIME_PATTERN = "HH:mm:ss";
 
     /**
-     * 显示年月日时分秒(无符号)，例如 20150811095153.
+     * 显示年月日时分秒(无符号)，例如 20210111095153.
      */
     public static final String UNSIGNED_DATETIME_PATTERN = "yyyyMMddHHmmss";
 
     /**
-     * 仅显示年月日(无符号)，例如 20150811.
+     * 仅显示年月日(无符号)，例如 20210111.
      */
     public static final String UNSIGNED_DATE_PATTERN = "yyyyMMdd";
 
@@ -137,7 +137,7 @@ public class LocalDateUtils {
     /**
      * 获取当前日期和时间字符串.
      *
-     * @return String 日期时间字符串，例如 2015-08-11 09:51:53
+     * @return String 日期时间字符串，例如 2021-01-11 09:51:53
      */
     public static String getLocalDateTimeStr() {
         return format(LocalDateTime.now(), DATETIME_PATTERN);
@@ -146,7 +146,7 @@ public class LocalDateUtils {
     /**
      * 获取当前日期字符串.
      *
-     * @return String 日期字符串，例如2015-08-11
+     * @return String 日期字符串，例如2021-01-11
      */
     public static String getLocalDateStr() {
         return format(LocalDate.now(), DATE_PATTERN);
@@ -187,7 +187,7 @@ public class LocalDateUtils {
      *
      * @param temporal 需要转化的日期时间
      * @param pattern  时间格式
-     * @return String 日期时间字符串，例如 2015-08-11 09:51:53
+     * @return String 日期时间字符串，例如 2021-08-11 09:51:53
      */
     public static String format(TemporalAccessor temporal, String pattern) {
         DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern(pattern);

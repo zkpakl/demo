@@ -9,7 +9,8 @@ import java.io.IOException;
  */
 public class Test01 {
     /**
-     * 写入字节流
+     * 字节输出流
+     *  这是把IDEA上的数据写入进指定位置
      * @param args
      */
     public static void main(String[] args) {
