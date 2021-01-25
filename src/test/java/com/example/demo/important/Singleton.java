@@ -15,4 +15,7 @@ public class Singleton {
 
         return instance;
     }
+    public void getName(){
+        System.out.println("你是个憨批");
+    }
 }
