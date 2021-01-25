@@ -8,7 +8,7 @@ import java.io.*;
  */
 public class EfficentCopyFile {
     public static void main(String[] args) throws IOException {
-        BufferedReader br = new BufferedReader(new FileReader("Demo.txt"));
+        BufferedReader br = new BufferedReader(new FileReader("Demo01.txt"));
         BufferedWriter bw = new BufferedWriter(new FileWriter("Dem0.txt"));
         String str;
         while ((str = br.readLine()) != null){

@@ -33,7 +33,7 @@ public class Test01 {
         long starTime = System.currentTimeMillis();
         //计算循环5000的时间
         for (int i = 0; i < 5000; i++) {
-            try (Reader reader = new FileReader("Demo.txt");Writer writer = new FileWriter("Demo1.txt")) {
+            try (Reader reader = new FileReader("Demo01.txt");Writer writer = new FileWriter("Demo1.txt")) {
                 char[] chars = new char[1024];
                 int len = 0;
                 while ((len = reader.read(chars)) != -1) {

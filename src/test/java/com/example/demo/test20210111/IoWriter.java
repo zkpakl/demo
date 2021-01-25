@@ -16,7 +16,7 @@ public class IoWriter {
      * @param args
      */
     public static void main(String[] args) {
-        try(Writer writer = new FileWriter("Demo.txt");BufferedWriter bw = new BufferedWriter(writer)) {
+        try(Writer writer = new FileWriter("Demo01.txt");BufferedWriter bw = new BufferedWriter(writer)) {
             // BufferedWriter将文本写入字符输出流，缓冲各个字符，从而提供单个字符、数组和字符串的高效写入；
             bw.write("狗男人，误终身!");
             // 清空缓存区，把数据强制输出

@@ -18,7 +18,7 @@ public class IoReader {
     public static void main(String[] args) throws IOException {
         Reader reader = null;
         try{
-            reader = new FileReader("Demo.txt");
+            reader = new FileReader("Demo01.txt");
             char[] arr = new char[5];
             int red = 0;
             while((red = reader.read(arr))!= -1 ){

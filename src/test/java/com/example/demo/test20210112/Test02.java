@@ -13,6 +13,7 @@ public class Test02 {
 
     /**
      * 字节输入流
+     * 把硬盘中的数据读入到内存中
      */
     @Test
     public void inputStream(){

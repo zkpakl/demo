@@ -10,7 +10,7 @@ import java.io.IOException;
 public class Test01 {
     /**
      * 字节输出流
-     *  这是把IDEA上的数据写入进指定位置
+     * 把内存中的数据写入进硬盘
      * @param args
      */
     public static void main(String[] args) {

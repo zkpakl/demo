@@ -1,6 +1,12 @@
 package com.example.demo.test20210112;
 
-import java.io.*;
+import org.springframework.util.FileCopyUtils;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.util.Base64;
 
 /**
  * @author zuokun
@@ -13,11 +19,10 @@ public class Test03 {
         try {
             fis = new FileInputStream("test.txt");
             fos = new FileOutputStream("test1.txt");
-            int len = 0;
-            byte[] bytes = new byte[fis.available()];
-            while ( (len = fis.read(bytes)) != -1){
-                fos.write(bytes);
-            }
+            FileCopyUtils.copy(fis,fos);
+            File file = new File("test.txt");
+            byte[] buffer = FileCopyUtils.copyToByteArray(file);
+            String encode = Base64.getEncoder().encodeToString(buffer);
         } catch (IOException e) {
             e.printStackTrace();
         }finally {

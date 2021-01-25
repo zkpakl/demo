@@ -11,7 +11,7 @@ public class CopyFile {
         Reader reader = null;
         Writer writer = null;
 
-        reader = new FileReader("Demo.txt");
+        reader = new FileReader("Demo01.txt");
         writer = new FileWriter("Demo1.txt");
         char[] chars = new char[1024];
         int len = 0;
