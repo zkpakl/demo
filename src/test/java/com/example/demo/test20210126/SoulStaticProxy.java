@@ -6,10 +6,10 @@ import org.apache.commons.lang3.StringUtils;
  * @author zuokun
  * @date 2021/1/26 10:18
  */
-public class Soul implements Female {
+public class SoulStaticProxy implements Female {
     private Female female;
 
-    public Soul(Female female) {
+    public SoulStaticProxy(Female female) {
         this.female = female;
     }
 
@@ -22,14 +22,19 @@ public class Soul implements Female {
         return girl();
     }
 
+    @Override
+    public String man() {
+        return null;
+    }
+
     public String girl() {
-        System.out.println("年轻美丽小姑娘");
-        return "年轻美丽小姑娘";
+        System.out.println("您要的年轻美丽小姑娘来了");
+        return "您要的年轻美丽小姑娘来了";
     }
 
     public String women() {
-        System.out.println("风韵依旧老阿姨");
-        return "风韵依旧老阿姨";
+        System.out.println("您要的知性风韵老阿姨来了");
+        return "您要的知性风韵老阿姨来了";
     }
 
 }

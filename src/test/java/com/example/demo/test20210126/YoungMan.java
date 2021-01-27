@@ -11,4 +11,9 @@ public class YoungMan implements Female {
         System.out.println("我喜欢"+str);
         return str;
     }
+
+    @Override
+    public String man() {
+        return "男人";
+    }
 }

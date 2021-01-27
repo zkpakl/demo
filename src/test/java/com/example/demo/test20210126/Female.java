@@ -7,5 +7,6 @@ package com.example.demo.test20210126;
 public interface Female {
 
     String findWife(String s);
+    String man();
 
 }

@@ -8,7 +8,7 @@ public class StaticProxyTest {
 
     public static void main(String[] args) {
         Female youngMan = new YoungMan();
-        Soul soul = new Soul(youngMan);
-        soul.findWife("小姑娘");
+        SoulStaticProxy soulStaticProxy = new SoulStaticProxy(youngMan);
+        soulStaticProxy.findWife("小姑娘");
     }
 }
