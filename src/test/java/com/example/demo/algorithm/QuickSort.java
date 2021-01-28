@@ -34,6 +34,7 @@ public class QuickSort {
 
     private static int partition(int[] array, int left, int right) {
         int temp = array[left];
+        // int[] array = {3, 44, 38, 5, 47, 15, 36, 26, 27, 2, 46, 4, 19, 50, 48};
         while (right > left) {
             // 先判断基准数和后面的数依次比较
             while (temp <= array[right] && left < right) {
