@@ -15,3 +15,9 @@ mybatis:
 
 
 
+object:
+  name: Object
+  blogurl: blog.objectspace.cn
+
+
+

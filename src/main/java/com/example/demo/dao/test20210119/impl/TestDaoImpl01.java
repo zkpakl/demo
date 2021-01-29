@@ -17,6 +17,10 @@ public class TestDaoImpl01 implements TestDao01 {
     @Autowired
     private SelectMapper01 selectMapper01;
 
+    public void TestDaoImpl01(String a){
+
+    }
+
     @Override
     public List<TestUser01> select(String id) {
         return selectMapper01.Select01(id);
