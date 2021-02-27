@@ -12,15 +12,19 @@ import org.springframework.stereotype.Component;
 public class TestConfig {
     private String name;
     private String blogUrl;
+
     public String getName() {
         return name;
     }
+
     public void setName(String name) {
         this.name = name;
     }
+
     public String getBlogUrl() {
         return blogUrl;
     }
+
     public void setBlogUrl(String blogUrl) {
         this.blogUrl = blogUrl;
     }
