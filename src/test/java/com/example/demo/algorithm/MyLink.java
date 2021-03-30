@@ -1,7 +1,7 @@
 package com.example.demo.algorithm;
 
 /**
- * @author Administrator
+ * @author zk
  */
 public class MyLink {
     Node head = null; // 头节点
@@ -9,7 +9,7 @@ public class MyLink {
     /**
      * 链表中的节点，data代表节点的值，next是指向下一个节点的引用
      *
-     * @author zjn
+     * @author zk
      *
      */
     class Node {
@@ -42,8 +42,8 @@ public class MyLink {
     }
 
     /**
-     *
      * @param index:删除第index个节点
+     *
      * @return
      */
     public boolean deleteNode(int index) {
